@@ -1,31 +1,238 @@
-/*  This is the css file for portfolio.*/
-
-blue color  = #343d52
-grey color =  #717786
-light grey color = #858b97
-
-/*  General settings  */
-
-* {
-    box-sizing: border-box;
-
+/* setting up portfolio page*/
+:root {
+    --blue: #1d334c;
+    --yellow: #f9e45b; 
+    --green: #6db784;
+    --white: #ffffff;
+    --charcoal: #36454F;
 }
 
-.navbar {
-    width: 100%;
-    height: 75px;
-    display: flex;
-    justify-content: flex-end;
-    padding: 5%;
-    background-color: #343d52;
-    outline: solid red 5px;
- }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
 
- .navitem {
+
+    * {
+        box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    body {
+           margin: 0px;
+           padding: 0px;
+    }
+
+     
+    /*   navbar/header section  */
+    .navcontainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--blue);
+    }
+
+
+
+    .navname {
+        font-size: 2rem;
+        margin: 1rem;
+        color: var(--white);
+        flex-shrink: 0;
+
+    }
+ 
     
- }
+    .navmenu ul {
+        margin: 0px;
+        padding: 0px;
+        display: flex;  
+    }
 
-nav {
-    outline: solid red 5px;
+    .navmenu li {
+        list-style: none;
+    }
+
+    .navmenu li:hover {
+        border: solid 2px;
+        border-color: var(--white);
+    }
+    
+
+    .navmenu li a {
+        padding: 1rem;
+        display: block;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: var(--white);
+   
+    }
+
+
+    /*  this is the main content of the page   */
+    main {
+        background-color: var(--blue);
+    }
+
+
+
+
+  /*  this is the middle photo break   */
+    .main1 {
+        text-align: center;
+        height: 50vh;
+        color: var(--white);
+    }
+
+     .main1 h2 {
+        margin: 2px 0px;
+        padding: 20px;
+        font-size: 2rem;
+    }
+
+    .main1 p {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0 10%;
+
+    }
+
+    
+
+
+
+
+    /* This is the projects container */
+    .main2 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 5px;
+        padding: 0.5rem;
+        height: 100vh;
+
+    }
+
+    .main2 .project {
+        background-color: var(--charcoal);
+        border: solid 2px var(--white);
+    }
+
+
+
+ /* this is the main section for the projects*/
+
+    .main2 .small {
+        grid-column: 3 / span 1;
+        grid-row: 4 / span 1;
+
+
+        
+    }
+
+    .main2 .medium1 {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+
+
+    }
+
+    .main2 .medium2 {
+        grid-column: 1 / span 2;
+        grid-row: 3 / span 2;
+
+
+    }
+
+    .main2 .large {
+        grid-column: 3 / span 3;
+        grid-row: 1 / span 3;
+
+
+    }
+
+    .main2 .wide {
+        grid-column: 1 / span 3;
+        grid-row: 5 / span 2;
+
+
+    }
+
+    .main2 .tall {
+        grid-column: 4 / span 2;
+        grid-row: 4 / span 3;
+
+
+    }
+
+    .project:hover {
+        transform: rotate(0.35deg);
+    }
+
+
+
+
+  /*   bottom contact section  */
+    footer {
+        background-color: var(--blue);
+        color: var(--white);
+
+
+    }
+
+    footer ul {
+        margin: 0;
+        padding: 1rem;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    footer li a {
+        text-decoration: none;
+        color: var(--white);
+    }
+
+
+
+
+@media screen and (max-width: 600px) {
+    .navmenu {
+        width: 100%;
+    }
+
+    .navcontainer {
+        flex-direction: column;
+
+    }
+
+    .navmenu ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navmenu li {
+        text-align: center;
+    }
+
+    .navmenu li a {
+        padding: 0.5rem 1rem;
+    }
+
+
+    /*playing with the grid. delete if it's a problem*/
+
+    .main2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+        height: 20vh;
+    }
+
+
+
+
+
 }
-
