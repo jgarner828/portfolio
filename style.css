@@ -49,16 +49,20 @@
 
     .navmenu li {
         list-style: none;
+        border: solid 2px;
+        border-color: var(--white);
+        border-radius: 5px;
+        margin: 1rem;
     }
 
     .navmenu li:hover {
-        border: solid 2px;
+        border: solid 4px;
         border-color: var(--white);
     }
     
 
     .navmenu li a {
-        padding: 1rem;
+        padding: 0.75rem;
         display: block;
         font-size: 1.5rem;
         text-decoration: none;
@@ -83,7 +87,7 @@
     }
 
      .main1 h2 {
-        margin: 2px 0px;
+        margin: 0px;
         padding: 20px;
         font-size: 2rem;
     }
@@ -105,7 +109,7 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(6, 1fr);
-        gap: 5px;
+        gap: 4px;
         padding: 0.5rem;
         height: 100vh;
 
@@ -114,6 +118,9 @@
     .main2 .project {
         background-color: var(--charcoal);
         border: solid 2px var(--white);
+        color: var(--white);
+        font-size: 2rem;
+        text-align: center;
     }
 
 
@@ -163,8 +170,11 @@
 
     }
 
+
+    /*this is where the project container does something on hover*/
     .project:hover {
         transform: rotate(0.35deg);
+        border: solid 4px var(--white);
     }
 
 
@@ -219,7 +229,7 @@
     }
 
 
-    /*playing with the grid. delete if it's a problem*/
+    /*main content grid changing to flex column */
 
     .main2 {
         display: flex;
@@ -231,6 +241,36 @@
         height: 20vh;
     }
 
+    footer ul {
+        margin: 0px;
+        padding: 0px;
+        display: flex;  
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer li {
+        list-style: none;
+        border: solid 2px;
+        border-color: var(--white);
+        border-radius: 5px;
+        margin: 0.25rem;
+    }
+
+    footer li:hover {
+        border: solid 2px;
+        border-color: var(--white);
+    }
+    
+
+    footer li a {
+        padding: 1rem;
+        display: block;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: var(--white);
+   
+    }
 
 
 
