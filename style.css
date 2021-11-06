@@ -19,7 +19,7 @@ different colors to test out...
     --black: #000000;
     --scarlet: #FF2400;
     --lightgrey: #e5e5e5;
-
+    --grey: #90a4ae;
 
 }
 
@@ -219,7 +219,7 @@ styling of content
   /*   bottom contact section  */
     footer {
        color: var(--black);
-        background-color: var(--green);
+        background-color: mediumblue;
     }
 
     footer ul {
@@ -287,7 +287,7 @@ styling of content
 
     .navmenu li {
         text-align: center;
-        background-color: var(--green);
+        background-color: mediumblue;
         border-radius: 10px;
         margin: 10px;
     
