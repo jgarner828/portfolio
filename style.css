@@ -1,24 +1,60 @@
-/* setting up portfolio page*/
+/* 
+
+
+
+different colors to test out...
+
+
+
+*/
 :root {
     --blue: #1d334c;
     --yellow: #f9e45b; 
-    --green: #6db784;
+    --green: #395004;
+    --lightgreen: #70e000;
     --white: #ffffff;
     --charcoal: #36454F;
+    --purplegrey: #9882AC;
+    --cyan: #14BDEB;
+    --black: #000000;
+    --scarlet: #FF2400;
+    --lightgrey: #e5e5e5;
+
+
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
 
+
+
+/*
+
+importing font family 
+
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Roboto:wght@500&display=swap');
+
+
+
+
+/*
+
+styling of content 
+
+*/
 
     * {
         box-sizing: border-box;
         font-family: 'Open Sans', sans-serif;
         font-family: 'Oswald', sans-serif;
+        font-family: 'Roboto', sans-serif;
     }
 
     body {
            margin: 0px;
            padding: 0px;
+
+
     }
 
      
@@ -27,16 +63,20 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: var(--blue);
-    }
+        margin-bottom: 25vh;
 
+
+    }
 
 
     .navname {
         font-size: 2rem;
+        font-weight: bolder;
         margin: 1rem;
-        color: var(--white);
+        margin-left: 4rem;
+        color:var(--black);
         flex-shrink: 0;
+
 
     }
  
@@ -49,15 +89,13 @@
 
     .navmenu li {
         list-style: none;
-        border: solid 2px;
-        border-color: var(--white);
-        border-radius: 5px;
         margin: 1rem;
+
     }
 
     .navmenu li:hover {
-        border: solid 4px;
-        border-color: var(--white);
+        text-decoration: underline;
+        border-radius: 5px;
     }
     
 
@@ -66,24 +104,19 @@
         display: block;
         font-size: 1.5rem;
         text-decoration: none;
-        color: var(--white);
+        color: var(--black);
    
     }
 
 
-    /*  this is the main content of the page   */
-    main {
-        background-color: var(--blue);
-    }
 
-
-
-
-  /*  this is the middle photo break   */
+  /* This is the about me section */
     .main1 {
         text-align: center;
         height: 50vh;
-        color: var(--white);
+        color: var(--black);
+        margin-top: 10vh;
+        margin-bottom: 10vh;
     }
 
      .main1 h2 {
@@ -93,7 +126,7 @@
     }
 
     .main1 p {
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-align: center;
         padding: 0 10%;
 
@@ -109,18 +142,21 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(6, 1fr);
-        gap: 4px;
-        padding: 0.5rem;
+        gap: 20px;
+        padding: 5rem;
         height: 100vh;
+
 
     }
 
     .main2 .project {
-        background-color: var(--charcoal);
-        border: solid 2px var(--white);
-        color: var(--white);
+
+        outline: solid 1px var(--black);
+        border-radius: 10px;
+        color: var(--black);
         font-size: 2rem;
         text-align: center;
+        background-color: var(--lightgrey);
     }
 
 
@@ -174,7 +210,7 @@
     /*this is where the project container does something on hover*/
     .project:hover {
         transform: rotate(0.35deg);
-        border: solid 4px var(--white);
+        outline: solid 4px var(--black);
     }
 
 
@@ -182,19 +218,24 @@
 
   /*   bottom contact section  */
     footer {
-        background-color: var(--blue);
-        color: var(--white);
-
-
+       color: var(--black);
+        background-color: var(--green);
     }
 
     footer ul {
         margin: 0;
-        padding: 1rem;
         font-size: 1.5rem;
         display: flex;
         justify-content: space-around;
+
+    }
+
+    footer li {
         list-style: none;
+        color: var(--white);
+        border-radius: 5px;
+        margin: 1rem;
+        padding: 1rem;
     }
 
     footer li a {
@@ -202,10 +243,29 @@
         color: var(--white);
     }
 
+    footer li:hover {
+        text-decoration: underline;
+    }
+
+
+
+
+    /*  
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    
+
+    EVERYTHING BELOW THIS IS MEDIA QUERY
+    
+    
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    */
 
 
 
 @media screen and (max-width: 600px) {
+
     .navmenu {
         width: 100%;
     }
@@ -215,6 +275,11 @@
 
     }
 
+    .navname {
+        text-align: center;
+        margin: 1rem auto;
+    }
+
     .navmenu ul {
         width: 100%;
         flex-direction: column;
@@ -222,14 +287,28 @@
 
     .navmenu li {
         text-align: center;
+        background-color: var(--green);
+        border-radius: 10px;
+        margin: 10px;
+    
     }
 
     .navmenu li a {
-        padding: 0.5rem 1rem;
+        padding: 0.75rem 1rem;
+        color: var(--white);
     }
 
+    .navmenu li:hover {
+        text-decoration: underline;
+        border-radius: 10px;
+    }
 
     /*main content grid changing to flex column */
+
+    .main1 {
+        height: 100%;
+    }
+
 
     .main2 {
         display: flex;
@@ -239,6 +318,7 @@
     .project {
         width: 100%;
         height: 20vh;
+
     }
 
     footer ul {
@@ -249,28 +329,7 @@
         text-align: center;
     }
 
-    footer li {
-        list-style: none;
-        border: solid 2px;
-        border-color: var(--white);
-        border-radius: 5px;
-        margin: 0.25rem;
-    }
 
-    footer li:hover {
-        border: solid 2px;
-        border-color: var(--white);
-    }
-    
-
-    footer li a {
-        padding: 1rem;
-        display: block;
-        font-size: 1.5rem;
-        text-decoration: none;
-        color: var(--white);
-   
-    }
 
 
 
