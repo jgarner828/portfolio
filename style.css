@@ -113,7 +113,7 @@ styling of content
   /* This is the about me section */
     .main1 {
         text-align: center;
-        height: 50vh;
+        height: auto;
         color: var(--black);
         margin-top: 10vh;
         margin-bottom: 10vh;
