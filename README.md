@@ -6,3 +6,5 @@ Atlanta, GA
 j.garner828@gmail.com
 
 
+https://jgarner828.github.io/portfolio/
+
