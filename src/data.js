@@ -3,7 +3,7 @@ export const projects = [
       title: "ME vs U",
       subtitle: "Friend based site allowing users to challenge friends in various competitions.",
       description:
-        "Built in collaboration with other developers. MVC design with user-authentication.?",
+        "Built in collaboration with other developers. MVC design with user-authentication.",
       heroku: "https://fast-beach-60601.herokuapp.com/",
       link: "https://github.com/jgarner828/ME-vs-U",
     },

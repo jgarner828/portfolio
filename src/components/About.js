@@ -4,9 +4,9 @@ class About extends React.Component {
   render() {
     
     return (
-        <section id="about" className='min-vh-100  border-bottom'>
+        <section id="about" className='min-vh-100  border-bottom d-flex flex-column justify-content-center'>
           <div>
-          <h1 className='text-center'>About Section</h1>
+          <h1 className='text-center text-grey'>Web Dev Professional</h1>
           </div>
         </section>
       );
