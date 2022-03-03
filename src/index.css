@@ -1,0 +1,46 @@
+/* 
+
+
+MAIN CSS FILE FOR PORTFOLIO 
+
+
+*/
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #373e40;
+  color: whitesmoke;
+
+}
+
+ul a {
+  color: whitesmoke;
+}
+
+/*  */
+.navbarContainer {
+  
+}
+
+/*  */
+.aboutContainer {
+  
+}
+
+/*  */
+.projectsContainer {
+  
+}
+
+/*  */
+.skillsContainer {
+  
+}
+
+
+/*  */
+.contactContainer {
+  
+}
