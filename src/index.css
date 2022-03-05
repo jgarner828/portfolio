@@ -10,37 +10,25 @@ MAIN CSS FILE FOR PORTFOLIO
 *{
   box-sizing: border-box;
   margin: 0;
-  background-color: #373e40;
-  color: whitesmoke;
+  background-color: #212529;
+  color: #e9ecef;
 
 }
 
 ul a {
-  color: whitesmoke;
-}
-
-/*  */
-.navbarContainer {
-  
-}
-
-/*  */
-.aboutContainer {
-  
-}
-
-/*  */
-.projectsContainer {
-  
-}
-
-/*  */
-.skillsContainer {
-  
+  color: #adb5bd;
 }
 
 
-/*  */
-.contactContainer {
-  
+/*  
+*/
+.project {
+  background-color: #adb5bd;
+  color: #212529;
 }
+
+/* 
+ */
+ .display-text {
+  color: #adb5bd;
+ }

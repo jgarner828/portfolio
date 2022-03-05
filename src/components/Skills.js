@@ -5,7 +5,7 @@ class Skills extends React.Component {
   render() {
     
     return (
-        <section id="skills" className=' border border-solid text-center'>
+        <section id="skills" className='border border-solid text-center m-1 p-1'>
 
             <div>
               <h1>Skills &amp; Technologies</h1>
@@ -13,7 +13,7 @@ class Skills extends React.Component {
 
             <ul className='list-group'>
               {skills.map((skill) => (
-                    <li key={skill} className='text-decoration-none'>{skill.title}</li>
+                    <li key={skill} className='text-decoration-none '>{skill.title}</li>
               ))}
             </ul>
             
