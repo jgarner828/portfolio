@@ -6,18 +6,18 @@ class Projects extends React.Component {
     
      return (
         <section id="projects">
-          <div className='text-center text-grey'>
+          <div className='text-center'>
             <div>
-              <h1>Projects</h1>
+              <h1 className='m-0'>Projects</h1>
             </div>
 
             <div>
               {projects.map((project) => (
                 <a href={project.link} key={project} className='m-2 p-2 text-decoration-none link-secondary'>
-                    <div className='m-2 p-2 border border-solid'>
-                      <h1>{project.title}</h1>
-                      <p>{project.subtitle}</p>
-                      <p>{project.description}</p>
+                    <div className='project m-2 p-2 border border-solid'>
+                      <h1 className='project'>{project.title}</h1>
+                      <p className='project'>{project.subtitle}</p>
+                      <p className='project'>{project.description}</p>
                     </div>
                 </a>
               ))}
