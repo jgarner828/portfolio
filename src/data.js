@@ -21,7 +21,7 @@ export const projects = [
       description:
         "Using browser local storage, this site stores user inputs and keeps track of time.",
       heroku: "https://infinite-lake-51697.herokuapp.com/",
-      link: "https://github.com/jgarner828/The-Tech-Connect",
+      link: "https://github.com/jgarner828/Work-Day-Scheduler",
     },
   ];
 

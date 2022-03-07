@@ -1,22 +1,24 @@
 /* 
-
-
 MAIN CSS FILE FOR PORTFOLIO 
-
-
 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+
 
 
 *{
   box-sizing: border-box;
   margin: 0;
-  background-color: #212529;
+  background-color: #031946;
   color: #e9ecef;
+  font-family: 'Poppins', sans-serif;
 
 }
 
 ul a {
-  color: #adb5bd;
+  color: #e9ecef;
 }
 
 
@@ -30,5 +32,5 @@ ul a {
 /* 
  */
  .display-text {
-  color: #adb5bd;
+  font-weight: 700;;
  }
