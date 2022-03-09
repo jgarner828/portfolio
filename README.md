@@ -1,12 +1,14 @@
-# Justin Garner Portfolio
+# Justin Garner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Thanks for visiting my portfolio repo! 
 
 ## Live Deployment
 
-[Heroku Deployment](https://justin-g-portfolio.herokuapp.com/)
+[Portfolio](https://justin-g-portfolio.herokuapp.com/)
 
+## Notes
 
+This portfolio has undergone a number of revisions. It is currently built with React.js and Node.js and hosted via Heroku.  
 
 
 https://www.linkedin.com/in/justin-garner-0598a398/
