@@ -36,3 +36,7 @@ ul a {
   color: #031946;
   background-color: white;
  }
+
+ #skills {
+   min-height: 200px;
+ }
