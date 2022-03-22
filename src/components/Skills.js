@@ -1,27 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { skills } from '../data';
+import SkillCard from './SkillCard';
 
-class Skills extends React.Component {
-  render() {
-    
-    return (
-        <section id="skills" className='border border-solid text-center m-1 p-1'>
+
+
+
+
+export default function Skills() {
+
+
+      return (
+        <section id="skills" className='border border-solid text-center m-1 p-1 h-75'>
 
             <div>
               <h1>Skills &amp; Technologies</h1>
             </div>
 
-            <ul className='list-group'>
-              {skills.map((skill) => (
-                    <li key={skill} className='text-decoration-none '>{skill.title}</li>
-              ))}
-            </ul>
-            
+              <SkillCard />
         </section>
       );
-  }
 }
-
-
-
-export default Skills;
