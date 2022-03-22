@@ -31,6 +31,8 @@ ul a {
 
 /* 
  */
- .display-text {
-  font-weight: 700;;
+ .aboutContainer {
+  font-weight: 700;
+  color: #031946;
+  background-color: white;
  }

@@ -30,12 +30,28 @@ export const projects = [
 
   export const skills = [
     {
-      title: "HTML"
+      title: "Languages",
+      skills: ['HTML', 'CSS', 'JavaScript', 'C++' ]
     },
     {
-      title: "Node"
+      title: "Databases",
+      skills: ['MySQL', 'MongoDB' ],
     },
     {
-      title: "MySQL"
+      title: "Server Side Development",
+      skills: ['MERN Stack', 'Template Engines'],
     },
+    {
+      title: "Front End Technologies",
+      skills: ['jQuery','Bootstrap', 'PWA' ],
+    },
+    {
+      title: "API Design",
+      skills: [ 'Client-Server Model', 'API', 'Rest', 'JSON', 'GraphQL' ],
+    },
+    {
+      title: "Quality Assurance",
+      skills: ['Unit Testing', 'Linting', 'Continuous integration' ],
+    },
+
   ];
