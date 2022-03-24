@@ -19,14 +19,14 @@ export default function SkillCard(params) {
         <div>
         {skills.map((skill) => {
             return (
-            <span onMouseEnter={(e) => setSkillsDisplay({skill}) } onMouseLeave={() => setIsShown(false)} key={skill.title} className="text-decoration-none"> {skill.title} </span>
+            <span onMouseEnter={(e) => setSkillsDisplay({skill}) } onMouseLeave={() => setIsShown(false)} key={skill.title} className="text-decoration-none m-1 p-1"> {skill.title} </span>
             );
         })}
 
         </div>
 
         {isShown && (
-        <div className='d-flex flex-column align-text-center'>
+        <div className='d-flex flex-column m-1 p-1 align-text-center'>
           {isSkillArray.map((each) => {
               return (
                   <h5>{each}</h5>
