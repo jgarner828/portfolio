@@ -20,7 +20,7 @@ export const projects = [
       subtitle: "This website allows you to create a daily schedule.",
       description:
         "Using browser local storage, this site stores user inputs and keeps track of time.",
-      heroku: "https://infinite-lake-51697.herokuapp.com/",
+      heroku: "https://jgarner828.github.io/Work-Day-Scheduler/",
       link: "https://github.com/jgarner828/Work-Day-Scheduler",
     },
   ];
