@@ -18,7 +18,7 @@ export default function Projects(props) {
 
 
             <a href={project.heroku || project.link} key={project} className='m-2 p-2 text-decoration-none link-secondary rounded' target="_blank" rel="noopener noreferrer">
-                <div className='project m-2 p-2 border border-solid'>
+                <div className='project m-2 p-2 border border-solid rounded'>
                   <h1 className='project'>{project.title}</h1>
                   <p className='project'>{project.subtitle}</p>
                   <p className='project'>{project.description}</p>
