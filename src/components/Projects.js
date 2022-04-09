@@ -11,12 +11,12 @@ export default function Projects(props) {
   
   return (
     <section id="projects">
-      <div className='text-center rounded-pill'>
+      <div className='text-center'>
         <div>
           <h1 className='m-0'>Projects</h1>
         </div>
 
-        <div>
+        <div className='m-5'>
           {projects.map((project) => (
 
 
