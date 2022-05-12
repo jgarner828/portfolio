@@ -39,7 +39,7 @@ export const projects = [
     },
     {
       title: "Server Side Development",
-      skills: ['MERN Stack', 'Template Engines'],
+      skills: ['MERN Stack', 'Amazon Web Services'],
     },
     {
       title: "Front End Technologies",

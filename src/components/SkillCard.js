@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { skills } from "../data";
+import '../App.css'
 
 export default function SkillCard(params) {
 
@@ -14,8 +15,9 @@ export default function SkillCard(params) {
 
     }
 
+    
   return (
-    <div className='d-flex flex-column'> 
+    <div className='skillContainer d-flex flex-column'> 
         <div>
         {skills.map((skill) => {
             return (
